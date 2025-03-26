@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('../fonts/Norse-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.left-side {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 41%;
+    height: 100vh;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.transparent-black {
+    flex: 1; 
+    max-height: 33.33vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: calc(20px - 30mm); 
+}
+
+.transparent-black img {
+    max-width: 50px;
+    height: auto;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-family: 'Norse', sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+    background-image: linear-gradient(to right, #FA8072, #FF9999);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.photo-credit {
+    font-size: 12px;
+    color: rgb(128, 126, 126); 
+    padding: 10px 15px;
+    align-self: center; 
+}
+
+.photo-credit a {
+    color: rgb(128, 126, 126); 
+}
+
+.right-side {
+    width: 59%;
+    height: 100vh;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-right {
+    background-color: #f5f5f5;
+    padding: 20px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+
+.intro {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.introTwo {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+.middle-right {
+    background-color: white;
+    padding: 20px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-column {
+    width: 48%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.bottom-right {
+    background-color: #f5f5f5;
+    padding: 20px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.button {
+    margin-bottom: 15px;
+}
+
+.button button {
+    width: 200px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #0056b3;
+}
+
+.login {
+    font-size: 14px;
+}
+
+.login a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+input[type="email"]:invalid {
+    border: 1px solid #FFC0CB; 
+}
+
+input[type="email"]:valid {
+    border: 1px solid #64f74b; 
+}
+
+input[type="password"] {
+    border: 1px solid #ccc;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid #FFC0CB; /* Pinkish-red for invalid */
+}
+
+input[type="password"]:valid {
+    border: 1px solid #64f74b; /* Green for valid */
+}
+
+input[type="password"]:focus:invalid {
+    outline: none;
+    border: 1px solid #FFC0CB;
+}
+
+input[type="password"]:focus:valid {
+    outline: none;
+    border: 1px solid #64f74b;
+}
